@@ -6,26 +6,28 @@
 <html lang="ru">
 <!--<![endif]-->
 	<head>
-		<meta charset = "utf-8" />
+		<meta charset="utf-8" />
 		<title>Каталог | Тралс</title>
-		<meta name = "description" content="" />
-		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
-		<!--<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />-->
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="cmsmagazine" content="aa4cc816c3e233bc68ec4386b3eabcf3" />
-		<link rel = "shortcut icon" href = "favicon.png">
-		<link rel = "stylesheet" href = "libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel = "stylesheet" href = "libs/owl-carousel/assets/owl.carousel.css" />		
-		<link rel = "stylesheet" href = "libs/fancybox/jquery.fancybox.css" />		
-		<link rel = "stylesheet" href = "libs/easy-responsive-tabs-to-accordion/easy-responsive-tabs.css" />
-		<link rel = "stylesheet" href = "css/fonts.css" />
-		<link rel = "stylesheet" href = "style.css" />
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- style include -->
+		<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.css" />		
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />		
+		<link rel="stylesheet" href="libs/sliderkit-1.9.2/sliderkit-core.css" />
+		<link rel="stylesheet" href="libs/easy-responsive-tabs-to-accordion/easy-responsive-tabs.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<!--[if lt IE 9]>
-			<script src = "libs/html5shiv/es5-shim.min.js"></script>
-			<script src = "libs/html5shiv/html5shiv.min.js"></script>
-			<script src = "libs/html5shiv/html5shiv-printshiv.min.js"></script>
-			<script src = "libs/respond/respond.min.js"></script>
+			<script src="libs/html5shiv/es5-shim.min.js"></script>
+			<script src="libs/html5shiv/html5shiv.min.js"></script>
+			<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src="libs/respond/respond.min.js"></script>
 		<![endif]-->
-		<link rel = "stylesheet" href = "css/media.css" />
+		<link rel="stylesheet" href="css/media.css" />
 		<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
 		<script type="text/javascript">
 			ymaps.ready(init);
@@ -33,14 +35,14 @@
 				myPlacemark;
 
 			function init(){ 
-				myMap = new ymaps.Map("ya-map", {
+				myMap=new ymaps.Map("ya-map", {
 					center: [54.65376134582473,29.139624128944376],
 					zoom: 17
 				}); 
 				myMap.controls.add(
 				   new ymaps.control.ZoomControl()
 				);				
-				var myPlacemark = new ymaps.Placemark([54.65376134582473,29.139624128944376], {
+				var myPlacemark=new ymaps.Placemark([54.65376134582473,29.139624128944376], {
 					hintContent: 'Новолукомльская ЦРБ',
 					balloonContent: 'Индекс: 211162 Витебская область, Чашникский район<br/>г. Новолукомль, ул. Энергетиков, 17 '
 				}, {
@@ -54,72 +56,72 @@
 	</head>
 	<body>
 	
-		<header class = "header">
-			<div class = "header__top">
-				<div class = "container">
-					<ul class = "header__contact flex">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<ul class="header__contact flex">
 						<li>
-							<div class = "header__contact__label">Отдел элементов <br>питания:</div>
-							<div class = "header__contact__data">+375 (17) 269-31-33 <br><a href = "" title = "">office@trals.by</a></div>
+							<div class="header__contact__label">Отдел элементов <br>питания:</div>
+							<div class="header__contact__data">+375 (17) 269-31-33 <br><a href="" title="">office@trals.by</a></div>
 						</li>
 						<li>
-							<div class = "header__contact__label">Отдел герметичных <br>аккумуляторов:</div>
-							<div class = "header__contact__data">+375 (17) 269-31-55 <br><a href = "" class = "">indbat@trals.by</a></div>
+							<div class="header__contact__label">Отдел герметичных <br>аккумуляторов:</div>
+							<div class="header__contact__data">+375 (17) 269-31-55 <br><a href="" class="">indbat@trals.by</a></div>
 						</li>
 						<li>
-							<div class = "header__contact__label">Отдел ламп бытового <br>освещения:</div>
-							<div class = "header__contact__data">+375 (17) 269-31-44 <br><a href = "" class = "">lamps@trals.by</a></div>
+							<div class="header__contact__label">Отдел ламп бытового <br>освещения:</div>
+							<div class="header__contact__data">+375 (17) 269-31-44 <br><a href="" class="">lamps@trals.by</a></div>
 						</li>
 						<li>
-							<div class = "header__contact__label">Общий номер: <br>&nbsp;</div>
-							<div class = "header__contact__data">+375 (17) 269-31-22 <br>trals@trals.by</div>
+							<div class="header__contact__label">Общий номер: <br>&nbsp;</div>
+							<div class="header__contact__data">+375 (17) 269-31-22 <br>trals@trals.by</div>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class = "header__center clearfix">
-				<div class = "container">
-					<a href = "/" class = "header__logo" title = "">
-						<img src = "images/i/pic-logo.png" alt = "">
+			<div class="header__center clearfix">
+				<div class="container">
+					<a href="/" class="header__logo" title="">
+						<img src="images/i/pic-logo.png" alt="">
 					</a>
-					<ul class = "header__menu">
-						<li class = "has-children">
-							<a href = "#" title = "">Каталог товаров</a>
-							<ul class = "sub-menu">
-								<li><a href = "#" title = "">Элементы питания</a></li>
-								<li><a href = "#" title = "">Бытовые аккумуляторы</a></li>
-								<li><a href = "#" title = "">Зарядные устройства</a></li>
-								<li><a href = "#" title = "">Индустриальные аккумуляторы</a></li>
-								<li><a href = "#" title = "">Лампы</a></li>
-								<li><a href = "#" title = "">Инверторы</a></li>
-								<li><a href = "#" title = "">Стационарные аккумуляторы</a></li>
-								<li><a href = "#" title = "">Сервис и ремент аккумуляторов</a></li>
-								<li><a href = "#" title = "">Портативные аккумуляторы</a></li>
-								<li><a href = "#" title = "">Светильники</a></li>
+					<ul class="header__menu">
+						<li class="has-children">
+							<a href="#" title="">Каталог товаров</a>
+							<ul class="sub-menu">
+								<li><a href="#" title="">Элементы питания</a></li>
+								<li><a href="#" title="">Бытовые аккумуляторы</a></li>
+								<li><a href="#" title="">Зарядные устройства</a></li>
+								<li><a href="#" title="">Индустриальные аккумуляторы</a></li>
+								<li><a href="#" title="">Лампы</a></li>
+								<li><a href="#" title="">Инверторы</a></li>
+								<li><a href="#" title="">Стационарные аккумуляторы</a></li>
+								<li><a href="#" title="">Сервис и ремент аккумуляторов</a></li>
+								<li><a href="#" title="">Портативные аккумуляторы</a></li>
+								<li><a href="#" title="">Светильники</a></li>
 							</ul>
 						</li>
-						<li><a href = "#" title = "">О компании</a></li>
-						<li><a href = "#" title = "">Партнеры</a></li>
-						<li><a href = "#" title = "">Торговые марки</a></li>
-						<li><a href = "#" title = "">Статьи</a></li>
-						<li><a href = "#" title = "">Контакты</a></li>
+						<li><a href="#" title="">О компании</a></li>
+						<li><a href="#" title="">Партнеры</a></li>
+						<li><a href="#" title="">Торговые марки</a></li>
+						<li><a href="#" title="">Статьи</a></li>
+						<li><a href="#" title="">Контакты</a></li>
 					</ul>
-					<div class = "header__address address">
+					<div class="header__address address">
 						<p>Pеспублика Беларусь, 220113, Минск, <br>Логойский тракт, д.15, к.4</p>
-						<a href = "#fb-map" class = "address__map js-open-modal" title = ""><span>Посмотреть на карте</span></a>
+						<a href="#fb-map" class="address__map js-open-modal" title=""><span>Посмотреть на карте</span></a>
 					</div>
 				</div>
 			</div>
 		</header>
 		
-		<div class = "main">
-			<div class = "container">
-				<ul class = "breadcrums">
-					<li><a href = "#" title = "">Главная</a></li>
+		<div class="main">
+			<div class="container">
+				<ul class="breadcrums">
+					<li><a href="#" title="">Главная</a></li>
 					<li><span>Элементы питания</span></li>
 				</ul>
 				<h1>Батарейки</h1>
-				<div class = "main__content single-article">
+				<div class="main__content single-article">
 					<p>Вот уже много лет подряд батарейки являются незаменимыми элементами питания для многих бытовых предметов, которые
 мы используем каждый день: пульт от телевизора, ключи от автомобиля, игрушки для вашего ребенка – для всего этого мы
 покупаем батарейки. Как правило, главными критериями при выборе элементов питания являются долговечность и безопасность.
@@ -132,8 +134,8 @@
 				</div>
 			</div>
 		
-			<div class = "gray-bg">
-				<div class = "container">
+			<div class="gray-bg">
+				<div class="container">
 					<form class="search clearfix">
 						<input class="search__txt" value="" placeholder="Поиск по названию, артикулу, EAN " type="search">
 						<input class="search__submit" value="Найти" type="submit">
@@ -141,34 +143,34 @@
 				</div>
 			</div>
 			
-			<div class = "catalog-area container">
-				<div class = "catalog-area__header">
-					<div class = "title">Подбор по параметрам</div>
-					<div class = "sort">
-						<div class = "label">Сначала:</div>
-						<ul class = "sort__opt">
-							<li><a href = "" title = "">Дешёвые</a></li>
-							<li><a href = "" title = "">Дорогие</a></li>
-							<li class = "selected"><a href = "" title = "">Все</a></li>
+			<div class="catalog-area container">
+				<div class="catalog-area__header">
+					<div class="title">Подбор по параметрам</div>
+					<div class="sort">
+						<div class="label">Сначала:</div>
+						<ul class="sort__opt">
+							<li><a href="" title="">Дешёвые</a></li>
+							<li><a href="" title="">Дорогие</a></li>
+							<li class="selected"><a href="" title="">Все</a></li>
 						</ul>
 					</div>
 					
 				</div>				
-				<div class = "clearfix">
-					<div class = "width-25 aside">
-						<div class = "aside__filter accordion">
-							<div class = "aside__filter__item btn-wr">
-								<a href = "#" class = "btn gray" title = "">Очистить фильтры</a>
+				<div class="clearfix">
+					<div class="width-25 aside">
+						<div class="aside__filter accordion">
+							<div class="aside__filter__item btn-wr">
+								<a href="#" class="btn gray" title="">Очистить фильтры</a>
 							</div>
-							<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title accordion-item">Цена, б.р.</div>
-								<div class = "aside__filter__item__var data">
+							<div class="aside__filter__item">
+								<div class="aside__filter__item__title accordion-item">Цена, б.р.</div>
+								<div class="aside__filter__item__var data">
 									<div class="slider-input">
-										<div class = "slider-input__left">от <input type="text" class="min" value="0.75"/> </div>
-										<div class = "slider-input__right">до <input type="text" class="max" value="4"/></div>
+										<div class="slider-input__left">от <input type="text" class="min" value="0.75"/> </div>
+										<div class="slider-input__right">до <input type="text" class="max" value="4"/></div>
 									</div>
 									<div class="factory"></div>
-									<div class = "checkbox">
+									<div class="checkbox">
 										<label>
 											<input id="" class="" name="" value="" type="checkbox">
 											<span>Новинка</span>
@@ -176,10 +178,10 @@
 									</div>
 								</div>
 							</div>
-							<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title accordion-item">Бренд</div>
-								<div class = "aside__filter__item__var data">
-									<ul class = "checkbox">
+							<div class="aside__filter__item">
+								<div class="aside__filter__item__title accordion-item">Бренд</div>
+								<div class="aside__filter__item__var data">
+									<ul class="checkbox">
 										<li>
 											<label>
 												<input id="" class="" name="" value="" type="checkbox">
@@ -267,10 +269,10 @@
 									</ul>									
 								</div>
 							</div>
-									<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title accordion-item">Химический состава</div>
-								<div class = "aside__filter__item__var data">
-									<ul class = "checkbox">
+									<div class="aside__filter__item">
+								<div class="aside__filter__item__title accordion-item">Химический состава</div>
+								<div class="aside__filter__item__var data">
+									<ul class="checkbox">
 										<li>
 											<label>
 												<input id="" class="" name="" value="" type="checkbox">
@@ -334,15 +336,15 @@
 									</ul>
 								</div>
 							</div>
-							<div class = "aside__filter__item btn-wr">
-								<a href = "#" class = "btn gray" title = "">Очистить фильтры</a>
+							<div class="aside__filter__item btn-wr">
+								<a href="#" class="btn gray" title="">Очистить фильтры</a>
 							</div>
 						</div>
 					</div>
-					<div class = "width-75">
-						<div class = "clearfix catalog-list">
+					<div class="width-75">
+						<div class="clearfix catalog-list">
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -356,7 +358,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -370,7 +372,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -384,7 +386,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -398,7 +400,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -412,7 +414,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -426,7 +428,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -440,7 +442,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -454,7 +456,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -468,7 +470,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -482,7 +484,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -496,7 +498,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -510,7 +512,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -524,7 +526,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -538,7 +540,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -552,7 +554,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/ex1.png" alt="">
@@ -566,7 +568,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/87562_1.png" alt="">
@@ -580,7 +582,7 @@
 								</a>
 							</div>
 							<!-- -->
-							<div class = "item">
+							<div class="item">
 								<a href="#" class="products-item">
 									<div class="products-item__pic">
 										<img src="images/508319_big.png" alt="">
@@ -595,47 +597,47 @@
 							</div>
 							<!-- -->
 						</div>
-						<a href = "" class = "load-more btn" title = "">загрузить еще</a>
+						<a href="" class="load-more btn" title="">загрузить еще</a>
 					</div>
 				</div>
 			</div>
 			
 		</div>
 		
-		<footer class = "footer">
-			<div class = "footer__top">
-				<div class = "container">
-					<div id = "back_top" class = "back_top"></div>
-					<div class = "row">
-						<div class = "width-25">
-							<a href = "/" class = "footer__logo" title = "">
-								<img src = "images/i/pic-logo.png" alt = "">
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div id="back_top" class="back_top"></div>
+					<div class="row">
+						<div class="width-25">
+							<a href="/" class="footer__logo" title="">
+								<img src="images/i/pic-logo.png" alt="">
 							</a>
 							<p>Компания ОДО «Тралс» , основанная в г. Минске в 1995 году является одним из крупнейших поставщиков элементов питания, герметичных аккумуляторов, стационарных аккумуляторов, зарядных устройств и светотехнической продукции в Республику Беларусь. </p>
 						</div>
-						<div class = "width-75">
-							<nav class = "footer__nav">
-								<ul class = "footer__menu clearfix">
-									<li><a href = "#" title = "">Каталог товаров</a></li>
-									<li><a href = "#" title = "">О компании</a></li>
-									<li><a href = "#" title = "">Партнеры</a></li>
-									<li><a href = "#" title = "">Торговые марки</a></li>
-									<li><a href = "#" title = "">Статьи</a></li>
-									<li><a href = "#" title = "">Контакты</a></li>
+						<div class="width-75">
+							<nav class="footer__nav">
+								<ul class="footer__menu clearfix">
+									<li><a href="#" title="">Каталог товаров</a></li>
+									<li><a href="#" title="">О компании</a></li>
+									<li><a href="#" title="">Партнеры</a></li>
+									<li><a href="#" title="">Торговые марки</a></li>
+									<li><a href="#" title="">Статьи</a></li>
+									<li><a href="#" title="">Контакты</a></li>
 								</ul>
 							</nav>
-							<ul class = "footer__contact">
-								<li class = "address">
-									<div class = "title">Адрес:</div>
+							<ul class="footer__contact">
+								<li class="address">
+									<div class="title">Адрес:</div>
 									<p>Pеспублика Беларусь, 220113, Минск, <br>Логойский тракт, д.15, к.4</p>
-									<a href = "#fb-map" class = "address__map js-open-modal" title = ""><span>Посмотреть на карте</span></a>
+									<a href="#fb-map" class="address__map js-open-modal" title=""><span>Посмотреть на карте</span></a>
 								</li>
 								<li>
-									<div class = "title">Время работы:</div>
+									<div class="title">Время работы:</div>
 									<p>понедельник — пятница: <span>с 9:00 до 19:00</span> <br>суббота: <span>с 10:00 до 17:00</span> <br>воскресенье: <span>выходной</span></p>
 								</li>
 								<li>
-									<div class = "title">Общий номер:</div>
+									<div class="title">Общий номер:</div>
 									<p>+375 (17) 269 31 22 <br>trals@trals.by</p>
 								</li>
 							</ul>
@@ -643,42 +645,43 @@
 					</div>				
 				</div>
 			</div>
-			<div class = "footer__copyright">
-				<div class = "container">
-					<div class = "flex">
+			<div class="footer__copyright">
+				<div class="container">
+					<div class="flex">
 						<p>© 2002-2017 ООО «Trals.by». Все права защищены</p>
-						<a class = "go-site-map" href = "#" title = "">Карта сайта</a>
-						<p>Разработка сайта: <a href = "#" class = "" title = "">webcompany.by</a></p>
+						<a class="go-site-map" href="#" title="">Карта сайта</a>
+						<p>Разработка сайта: <a href="#" class="" title="">webcompany.by</a></p>
 					</div>
 				</div>
 			</div>
 		</footer>
 		
-		<div id = "fb-map" class = "g-modal-win" style="display: none;">
-			<div class = "g-modal-win__content">
-				<div class = "modal__address"><span>Адрес:</span> Республика Беларусь, индекс 220113, г.Минск, Лагойский тракт, д.15, к.4 </div>
-				<div id = "ya-map" class = "ya-map"></div>
-				<div class = "clearfix">
-					<div class = "modal__phone">
-						<div class = "title">Номера телефонов: </div>
+		<div id="fb-map" class="g-modal-win" style="display: none;">
+			<div class="g-modal-win__content">
+				<div class="modal__address"><span>Адрес:</span> Республика Беларусь, индекс 220113, г.Минск, Лагойский тракт, д.15, к.4 </div>
+				<div id="ya-map" class="ya-map"></div>
+				<div class="clearfix">
+					<div class="modal__phone">
+						<div class="title">Номера телефонов: </div>
 						<p>Отдел елементов питания: <span>+375 (17) 31-269-31-33</span> <br>Отдел герметичных аккумулятор: <span>+375 (17) 269-31-55</span> <br>
 						Отдел лапм бытового освещения: <span>+375 (17) 269-31-44</span> <br>Общий номер: <span>+375 (17) 269-31-32</span></p>
 					</div>
-					<div class = "modal__time">
-						<div class = "title">Время работы: </div>
+					<div class="modal__time">
+						<div class="title">Время работы: </div>
 						<p>понедельник — пятница: <span>с 9:00 до 19:00</span> <br>суббота: <span>с 10:00 до 17:00</span> <br>воскресенье: <span>выходной</span> </p>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<script src = "libs/jquery/jquery-1.11.1.min.js"></script>
-		<script src = "libs/owl-carousel/owl.carousel.min.js"></script>	
-		<script src = "libs/fancybox/jquery.fancybox.pack.js"></script>			
-		<script src = "libs/sliderkit-1.9.2/jquery.sliderkit.1.9.2.pack.js"></script>		
-		<script src = "libs/easy-responsive-tabs-to-accordion/easyResponsiveTabs.js"></script>
-		<script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>		
-		<script src = "js/common.js"></script>
+		<!-- scrits include -->
+		<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+		<script src="libs/owl-carousel/owl.carousel.min.js"></script>	
+		<script src="libs/fancybox/jquery.fancybox.pack.js"></script>			
+		<script src="libs/sliderkit-1.9.2/jquery.sliderkit.1.9.2.pack.js"></script>
+		<script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>	
+		<script src="libs/easy-responsive-tabs-to-accordion/easyResponsiveTabs.js"></script>
+		<script src="js/common.js"></script>
 		<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 		<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 	</body>

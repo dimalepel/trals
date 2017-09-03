@@ -1,4 +1,4 @@
-// Сладер брендов
+// Слайдер брендов
 $('.brands-slider').owlCarousel({
   loop:true,
 	navText: ['',''],
