@@ -3,7 +3,7 @@
 
 Главная https://dimalepel.github.io/trals/
 
-Карта https://dimalepel.github.io/trals/ya-map.html
+Поп-ап карта https://dimalepel.github.io/trals/ya-map.html
 
 Карта сайта https://dimalepel.github.io/trals/site-map.html
 
@@ -30,3 +30,5 @@
 Торговые марки(Побробнее) https://dimalepel.github.io/trals/brand-detail.html
 
 Торговые марки https://dimalepel.github.io/trals/brands.html
+
+Страница со списком https://dimalepel.github.io/trals/page.html

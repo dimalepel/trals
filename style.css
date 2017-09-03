@@ -639,6 +639,25 @@ h1 {
 	font-weight: normal;
 	color: #333333;
 }
+.single-article ul li {
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 14px;
+	padding-left: 10px;
+	position: relative;
+	color: #5E5E5E;
+}
+.single-article ul li:before {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #D72922;
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
 .single-article .red {
 	font-family: "RobotoMedium";
 	color: #D72922;
@@ -978,6 +997,10 @@ h1 span {font-family: "RobotoRegular";}
 	display: block;
 	margin-top: 40px;
 }
+.catalog-area .load-more:hover {
+	background: #D72922;
+	color: #fff;
+}
 .aside__filter {
 	border-top: 1px solid #DFDFDE;
 	margin: -1px -1px 0 0;
@@ -995,11 +1018,13 @@ h1 span {font-family: "RobotoRegular";}
 	border-color: #C2C2C2;
 	display: block;
 }
+.btn.gray:hover {border-color: #9D9D9D;}
 .aside__filter__item__title {
-	margin-bottom: 14px;
 	line-height: 19px;
 	position: relative;
+	cursor: pointer;
 }
+/* .aside__filter__item__title.open {margin-bottom: 14px;} */
 .aside__filter__item__title:before {
 	content: '';
 	display: block;
@@ -1010,13 +1035,14 @@ h1 span {font-family: "RobotoRegular";}
 	bottom: 0;
 }
 .aside__filter__item__title:after {
-	content: '\f107';
+	content: '\f106';
 	display: block;
 	font-family: FontAwesome;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
+.aside__filter__item__title.open:after {content: '\f107';}
 /* --- */
 .slider-input {
   overflow: hidden;
@@ -1116,6 +1142,8 @@ line-height: 18px;
     float: left;
     background-color: transparent;
 }
-.checkbox input[type="checkbox"]:checked + span::before {
-    background: url(images/i/Path.png) no-repeat center;
+.checkbox input[type="checkbox"]:checked + span::before {background: url(images/i/Path.png) no-repeat center;}
+.accordion .aside__filter__item .data {
+	padding-top: 14px;
+	display: none;
 }

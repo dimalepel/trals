@@ -15,7 +15,8 @@
 		<link rel = "shortcut icon" href = "favicon.png">
 		<link rel = "stylesheet" href = "libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 		<link rel = "stylesheet" href = "libs/owl-carousel/assets/owl.carousel.css" />		
-		<link rel = "stylesheet" href = "libs/fancybox/jquery.fancybox.css" />
+		<link rel = "stylesheet" href = "libs/fancybox/jquery.fancybox.css" />		
+		<link rel = "stylesheet" href = "libs/easy-responsive-tabs-to-accordion/easy-responsive-tabs.css" />
 		<link rel = "stylesheet" href = "css/fonts.css" />
 		<link rel = "stylesheet" href = "style.css" />
 		<!--[if lt IE 9]>
@@ -155,13 +156,13 @@
 				</div>				
 				<div class = "clearfix">
 					<div class = "width-25 aside">
-						<div class = "aside__filter">
+						<div class = "aside__filter accordion">
 							<div class = "aside__filter__item btn-wr">
 								<a href = "#" class = "btn gray" title = "">Очистить фильтры</a>
 							</div>
 							<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title">Цена, б.р.</div>
-								<div class = "aside__filter__item__var">
+								<div class = "aside__filter__item__title accordion-item">Цена, б.р.</div>
+								<div class = "aside__filter__item__var data">
 									<div class="slider-input">
 										<div class = "slider-input__left">от <input type="text" class="min" value="0.75"/> </div>
 										<div class = "slider-input__right">до <input type="text" class="max" value="4"/></div>
@@ -176,8 +177,8 @@
 								</div>
 							</div>
 							<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title">Бренд</div>
-								<div class = "aside__filter__item__var">
+								<div class = "aside__filter__item__title accordion-item">Бренд</div>
+								<div class = "aside__filter__item__var data">
 									<ul class = "checkbox">
 										<li>
 											<label>
@@ -239,13 +240,36 @@
 												<span>Varta</span>
 											</label>
 										</li>
-									</ul>
-									<a href = "#" class = "btn gray see-more" title = "">Показать еще</a>
+										<li>
+											<label>
+												<input id="" class="" name="" value="" type="checkbox">
+												<span>GP</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input id="" class="" name="" value="" type="checkbox">
+												<span>Energizer</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input id="" class="" name="" value="" type="checkbox">
+												<span>Panasonic</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input id="" class="" name="" value="" type="checkbox">
+												<span>Varta</span>
+											</label>
+										</li>
+									</ul>									
 								</div>
 							</div>
 									<div class = "aside__filter__item">
-								<div class = "aside__filter__item__title">Химический состава</div>
-								<div class = "aside__filter__item__var">
+								<div class = "aside__filter__item__title accordion-item">Химический состава</div>
+								<div class = "aside__filter__item__var data">
 									<ul class = "checkbox">
 										<li>
 											<label>
@@ -651,7 +675,8 @@
 		<script src = "libs/jquery/jquery-1.11.1.min.js"></script>
 		<script src = "libs/owl-carousel/owl.carousel.min.js"></script>	
 		<script src = "libs/fancybox/jquery.fancybox.pack.js"></script>			
-		<script src = "libs/sliderkit-1.9.2/jquery.sliderkit.1.9.2.pack.js"></script>
+		<script src = "libs/sliderkit-1.9.2/jquery.sliderkit.1.9.2.pack.js"></script>		
+		<script src = "libs/easy-responsive-tabs-to-accordion/easyResponsiveTabs.js"></script>
 		<script src="libs/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>		
 		<script src = "js/common.js"></script>
 		<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
