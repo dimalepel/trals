@@ -36,19 +36,19 @@
 
 			function init(){ 
 				myMap=new ymaps.Map("ya-map", {
-					center: [54.65376134582473,29.139624128944376],
+					center: [53.9443346,27.6099203],
 					zoom: 17
 				}); 
 				myMap.controls.add(
 				   new ymaps.control.ZoomControl()
 				);				
-				var myPlacemark=new ymaps.Placemark([54.65376134582473,29.139624128944376], {
-					hintContent: 'Новолукомльская ЦРБ',
-					balloonContent: 'Индекс: 211162 Витебская область, Чашникский район<br/>г. Новолукомль, ул. Энергетиков, 17 '
+				var myPlacemark=new ymaps.Placemark([53.9443346,27.6099203], {
+					hintContent: 'Тралс',
+					balloonContent: 'Минск, Логойский тракт, 15 корпус 4'
 				}, {
-					iconImageHref: 'http://novolukomlcrb.by/wp-content/themes/ncrb/images/i/baloon_map.png',
-					iconImageSize: [40,64],
-					iconImageOffset: [-30, -60]
+					iconImageHref: 'images/i/baloon_map.png',
+					iconImageSize: [23,30],
+					iconImageOffset: [-12, -30]
 				});				
 				myMap.geoObjects.add(myPlacemark);
 			}
@@ -57,6 +57,7 @@
 	<body>
 	
 		<header class="header">
+			<!-- Шапка верх -->
 			<div class="header__top">
 				<div class="container">
 					<ul class="header__contact flex">
@@ -79,6 +80,7 @@
 					</ul>
 				</div>
 			</div>
+			<!-- Шапка низ + меню -->
 			<div class="header__center clearfix">
 				<div class="container">
 					<a href="/" class="header__logo" title="">
@@ -116,143 +118,157 @@
 		
 		<div class="main">
 			<div class="container">
+				<!-- Хлебные крошки -->
 				<ul class="breadcrums">
 					<li><a href="#" title="">Главная</a></li>
 					<li><span>Статьи</span></li>
 				</ul>
 				<h1>Статьи</h1>
 				<div class="main__content">
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-1.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">ENELOOP — СОВЕРШЕННЫЕ АККУМУЛЯТОРЫ</a></h2>
 								<p>Eneloop - торговая марка никель-металл-гидридных аккумуляторов и сопутствующих устройств компании Panasonic, впервые представленная на рынке в ноябре 2005 года. Eneloop относятся к поколению LSD-аккумуляторов (low self-discharge NiMH, аккумуляторы с низким уровнем саморазряда), при хранении в заряженном состоянии они теряют заряд значительно медленнее, чем Ni-MH аккумуляторы предыдущего поколения: eneloop теряют всего 10% заряда в течение… </p>
 								<a href="#" class="btn" title="">подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-2.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">JAZZWAY — ДА БУДЕТ СВЕТ</a></h2>
 								<p>Компания Jazzway предлагает разнообразную светотехническую продукцию, среди которой:  компактные люминисцентные лампы (КЛЛ), светодиоды, светодиодная лента, прожекторы, банники, трансформаторы, ПРА, ЭПРА, светильники точечные, пылевлагозащищенные светильники, металогалогенные лампы, металогалогенные прожекторы, светодиодные лампы, лампы накаливания, неинтегрированные КЛЛ, галогенные лампы, лампы любой мощности, люминисцентные.</p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-3.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">DURACELL</a></h2>
 								<p>Наша компания занимается поставками и оптовыми продажами батареек Duracell на территории Республики Беларусь. Сегодня бренд Duracell известен по всему миру. Наверняка каждый из вас помнит энергичного кролика, который бесконечно готов бежать по дистанции и, кажется, ничего не может выбить его из сил.  Но несмотря на то, что сегодня щелочные батарейки уже не пользуются такой популярностью, как 10-20 лет назад, компания Duracell продолжает… </p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-4.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="#" title="">OSRAM</a></h2>
 								<p>Корпорация OSRAM – один из ведущих производителей ламп в мире. Спектр интересов компании – вся линейка продуктов, имеющих отношение к освещению: от компонентов электронных управляющих механизмов до разного рода светильников, систем управления светом и других световых решений. Лампы и системы освещения от компании OSRAM – основа придания вещам красивого вида, обеспечения безопасности и комфорта, эффективного использования ресурсов… </p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-5.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">ЭЛЕМЕНТЫ ПИТАНИЯ ОТ DAEWOO</a></h2>
 								<p>Корпорация Daewoo – ДЭУ (Daewoo International Corporation) – известный производитель такого количества разнообразной продукции, что у потребителей глаза разбегаются. Однако общеизвестно, что к какому бы виду товаров ни относились продукты Daewoo, они отличаются отличным качеством. В магазинах компании Тралс (официального дилера Daewoo в Республике Беларусь) продукция Daewoo представлена батарейками, солевыми и щелочными (алкалиновыми)…</p>
 								<a href="#" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-6.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">БАТАРЕЙКИ MINAMOTO</a></h2>
 								<p>Компания Minamoto (Minamoto Industrial Limited), основанная двадцать лет назад, – ведущий производитель батарей и аккумуляторов широкого спектра. Компания производит и поставляет на мировой рынок химические источники тока промышленного и бытового  назначения. Среди ассортимента высококачественной продукции Minamoto, поставляемой дистрибьюторам и клиентам со всего мира, такие разновидности, как литиевые, серебряные, алкалиновые батареи…</p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-7.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">GP BATTERIES</a></h2>
 								<p>Группа GP известна в основном благодаря производству различного вида аккумуляторов и связанных с ними продуктов. Сегодня продукцию GP можно приобрести практически по всему миру благодаря широкой сети магазинов и дистрибьюторских компаний. Такая популярность объясняется высоким качеством продукции и многолетним опытом работы, в течение которого компания GP смогла заслужить доверие среди потребителей…</p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-8.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">casil</a></h2>
 								<p>Бренд Casil является одним из ведущих мировых брендов в области аккумуляторных батарей, которые используются в различных системах безопасности, в том числе в области резервного копирования данных. Основанная в 1965 году, компания Casil выросла за эти годы в крупного поставщика, представляющего одну из самых надежных и наиболее часто используемых торговых марок.  Оборудование Casil используется в целях охраны, видеонаблюдения, противопожарной…</p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-9.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">аккумуляторы MHB</a></h2>
 								<p>Бренд Casil является одним из ведущих мировых брендов в области аккумуляторных батарей, которые используются в различных системах безопасности, в том числе в области резервного копирования данных. Основанная в 1965 году, компания Casil выросла за эти годы в крупного поставщика, представляющего одну из самых надежных и наиболее часто используемых торговых марок.  Оборудование Casil используется в целях охраны, видеонаблюдения, противопожарной…</p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->
+					<!-- Запись -->
 					<article class="articles-list__item">
 						<div class="row">
-							<div class="width-25">
+							<div class="articles-list__img">
 								<img src="images/pic-logo-10.png" alt="">
 							</div>
-							<div class="width-75">
+							<div class="articles-list__content">
 								<h2><a href="" title="">fiam</a></h2>
 								<p>Компания FIAMM – мировой и европейский лидер в производстве батарей. Заслуженное превалирование компании на аккумуляторном  рынке обусловлено широким спектром продукции и совершенством технологических разработок, чем по праву гордится FIAMM. Компания продолжает расширять ассортимент продукции, в частности, свинцово-кислотных батарей (SLA, или VRLA) благодаря постоянным инновациям и научным исследованиям. Продукция компании одна из… </p>
 								<a href="" class="btn" title="">Подробнее</a>
 							</div>
 						</div>
 					</article>
-					<!-- -->					
+					<!-- Запись -->
+					<article class="articles-list__item">
+						<div class="row">
+							<div class="articles-list__img">
+								<img src="images/pic-logo-10.png" alt="">
+							</div>
+							<div class="articles-list__content">
+								<h2><a href="" title="">fiam</a></h2>
+								<p>Компания FIAMM – мировой и европейский лидер в производстве батарей. Заслуженное превалирование компании на аккумуляторном  рынке обусловлено широким спектром продукции и совершенством технологических разработок, чем по праву гордится FIAMM. Компания продолжает расширять ассортимент продукции, в частности, свинцово-кислотных батарей (SLA, или VRLA) благодаря постоянным инновациям и научным исследованиям. Продукция компании одна из… </p>
+								<a href="" class="btn" title="">Подробнее</a>
+							</div>
+						</div>
+					</article>
+					<!-- Пагинация -->					
 					<ul class="pagination">
 						<li><a href="" class=""></a></li>
 						<li><a href="" class="">1</a></li>
@@ -267,17 +283,18 @@
 		</div>
 		
 		<footer class="footer">
+			<!-- Подвал верх -->
 			<div class="footer__top">
 				<div class="container">
 					<div id="back_top" class="back_top"></div>
 					<div class="row">
-						<div class="width-25">
+						<div class="width-28">
 							<a href="/" class="footer__logo" title="">
 								<img src="images/i/pic-logo.png" alt="">
 							</a>
 							<p>Компания ОДО «Тралс» , основанная в г. Минске в 1995 году является одним из крупнейших поставщиков элементов питания, герметичных аккумуляторов, стационарных аккумуляторов, зарядных устройств и светотехнической продукции в Республику Беларусь. </p>
 						</div>
-						<div class="width-75">
+						<div class="width-72">
 							<nav class="footer__nav">
 								<ul class="footer__menu clearfix">
 									<li><a href="#" title="">Каталог товаров</a></li>
@@ -307,6 +324,7 @@
 					</div>				
 				</div>
 			</div>
+			<!-- Подвал копирайт -->
 			<div class="footer__copyright">
 				<div class="container">
 					<div class="flex">
@@ -318,6 +336,7 @@
 			</div>
 		</footer>
 		
+		<!-- Модальная карта -->
 		<div id="fb-map" class="g-modal-win" style="display: none;">
 			<div class="g-modal-win__content">
 				<div class="modal__address"><span>Адрес:</span> Республика Беларусь, индекс 220113, г.Минск, Лагойский тракт, д.15, к.4 </div>
