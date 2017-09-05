@@ -44,12 +44,12 @@ function SliderMinMax(selector,min,max,step,range){
 		values: [min,max],
 		range: range,
 		stop: function(event, ui) {
-			jQuery(this).siblings('.slider-input').children('div').children('input.min').val(jQuery(this).slider("values",0));
-			jQuery(this).siblings('.slider-input').children('div').children('input.max').val(jQuery(this).slider("values",1));
+			jQuery(this).parent().siblings('.slider-input').children('div').children('input.min').val(jQuery(this).slider("values",0));
+			jQuery(this).parent().siblings('.slider-input').children('div').children('input.max').val(jQuery(this).slider("values",1));
 		},
 		slide: function(event, ui){
-			jQuery(this).siblings('.slider-input').children('div').children('input.min').val(jQuery(this).slider("values",0));
-			jQuery(this).siblings('.slider-input').children('div').children('input.max').val(jQuery(this).slider("values",1));
+			jQuery(this).parent().siblings('.slider-input').children('div').children('input.min').val(jQuery(this).slider("values",0));
+			jQuery(this).parent().siblings('.slider-input').children('div').children('input.max').val(jQuery(this).slider("values",1));
 		}
 	});
 };
@@ -68,9 +68,20 @@ $('div.see-more').click(function(){
 	ul.find('li:hidden:lt(99)').slideToggle();
 	if (ul.find('li.hidden').length == 0) {
 		// $(this).html('Скрыть');
-		$(this).hide();
+		// $(this).hide();
 	}
 })
+let button = document.querySelector("div.see-more");
+let shown = false;
+button.addEventListener("click", event => {
+  if (shown) {
+  	button.textContent = "Показать еще";
+  } else {
+  	button.textContent = "Скрыть";
+  }
+  
+  shown = shown ? false : true;
+}, false);
 // Аккордион
 $(function($) {
   var allAccordions = $('.accordion div.data');

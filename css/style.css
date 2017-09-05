@@ -494,9 +494,8 @@ body {
 .footer__copyright p:last-of-type {font-size: 12px;}
 .footer__copyright .go-site-map {font-size: 14px;}
 /* Модальная карта */
-.fb-modal-win .g-modal-win__content {
-	width: 760px;
-}
+.fb-modal-win .g-modal-win__content {width: 760px;}
+.fancybox-overlay {background: rgba(0, 0, 0, .85);}
 .fb-modal-win .fancybox-skin {
 	border-radius: 4px;
 	background: #fff;
@@ -629,6 +628,7 @@ h1 span {font-family: "RobotoRegular";}
 .page-404__body .title {
 	font-size: 21px;
 	margin-bottom: 15px;
+	color: #333333;
 }
 .page-404__body .desc {
 	line-height: 24px;
@@ -649,6 +649,11 @@ h1 span {font-family: "RobotoRegular";}
 	border: 1px solid #D72922;
 	border-radius: 3px;
 }
+.page-404__body .btn:hover,
+.articles-list__item .btn:hover {
+	color: #fff;
+	background: #D72922;
+}
 /* Страница материала */
 .single-article b {
 	font-weight: normal;
@@ -656,7 +661,7 @@ h1 span {font-family: "RobotoRegular";}
 }
 .single-article ul li {
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 20px;
 	margin-bottom: 14px;
 	padding-left: 10px;
 	position: relative;
@@ -976,7 +981,10 @@ h1 span {font-family: "RobotoRegular";}
 .price__list span {color: #D72922;}
 .single-product__top {margin-bottom: 27px;}
 .single-product__options {padding-left: 9%;}
-.long-desc {margin-bottom: 21px;}
+.long-desc {
+	max-width: 839px;
+	margin-bottom: 21px;
+}
 .long-desc h2,
 .options-data h2 {
 	font-size: 20px;
@@ -1094,7 +1102,10 @@ h1 span {font-family: "RobotoRegular";}
 	padding: 13px 19px 20px 19px;
 }
 .aside__filter__item.btn-wr {padding: 23px 19px;}
-.aside__filter__item .see-more {font-family: "RobotoMedium";}
+.aside__filter__item .see-more {
+	cursor: pointer;
+	font-family: "RobotoMedium";
+}
 .btn.gray {
 	color: #777777;
 	border-color: #C2C2C2;
@@ -1149,19 +1160,22 @@ h1 span {font-family: "RobotoRegular";}
 	border: 0;
 	color: #333333;
 }
-.slider-input .slider-input__right {
-    float: right;
-}
+.slider-input .slider-input__right {float: right;}
 .options-item .ui-widget-content {
-    border: none;
+   
+}
+.ui-slider-container {
+	 border: none;
     background: #bdbdbd;
     border-radius: 3px;
     height: 6px;
+		margin-bottom: 23px;
+		padding: 0 15px;
 }
 .ui-slider {
     position: relative;
     text-align: left;
-		margin-bottom: 23px;
+		
 }
 .ui-slider .ui-slider-range {
     background: #D72922;
@@ -1186,7 +1200,7 @@ h1 span {font-family: "RobotoRegular";}
     touch-action: none;
 }
 .ui-slider-horizontal .ui-slider-handle {
-    top: -.4em;
+    top: -6px;
     margin-left: -.6em;
 }
 .ui-slider-handle {
