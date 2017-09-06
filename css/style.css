@@ -842,7 +842,8 @@ h1 span {font-family: "RobotoRegular";}
   padding-left: 27px;
 	width: 44%;
 }
-.contact-page__content h1 {margin-bottom: 15px;}
+/* .contact-page__content h1 {margin-bottom: 15px;}*/
+.contact-page__content h1 {margin-bottom: 30px;}
 .contact-page .breadcrums {margin-bottom: 7px;}
 .contact-page .ya-map {height: 373px;}
 .contact-page .modal__phone, 
@@ -850,12 +851,15 @@ h1 span {font-family: "RobotoRegular";}
 	float: none;
 	width: auto;
 }
+.contact-page .modal__time,
+.contact-page .modal__address {margin-bottom: 30px;}
 .contact-page p {color: #333333;}
 .contact-page .modal__phone .title, 
 .contact-page .modal__time .title,
 .contact-page .modal__address .title {
 	font-size: 16px;
-	margin-bottom: 8px;
+	/*margin-bottom: 8px;*/
+	margin-bottom: 19px;
 	color: #999999;
 }
 /* Карточка товара */
@@ -1170,7 +1174,7 @@ h1 span {font-family: "RobotoRegular";}
     border-radius: 3px;
     height: 6px;
 		margin-bottom: 23px;
-		padding: 0 15px;
+		padding: 0 15px 0 17px;
 }
 .ui-slider {
     position: relative;
