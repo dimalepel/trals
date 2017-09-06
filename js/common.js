@@ -83,7 +83,11 @@ button.addEventListener("click", event => {
   shown = shown ? false : true;
 }, false);
 // Аккордион
-$(function($) {
+$('.accordion-item').click(function(){
+	$(this).siblings('.data').slideToggle();
+	$(this).toggleClass('close');
+})
+/*$(function($) {
   var allAccordions = $('.accordion div.data');
   var allAccordionItems = $('.accordion .accordion-item');
   $('.accordion .aside__filter__item > .accordion-item').click(function() {
@@ -101,4 +105,4 @@ $(function($) {
     return false;
     }
   });
-});
+});*/

@@ -1128,14 +1128,14 @@ h1 span {font-family: "RobotoRegular";}
 	bottom: 0;
 }
 .aside__filter__item__title:after {
-	content: '\f106';
+	content: '\f107';
 	display: block;
 	font-family: FontAwesome;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-.aside__filter__item__title.open:after {content: '\f107';}
+.aside__filter__item__title.close:after {content: '\f106';}
 /* Ползунок фильтра */
 .slider-input {
   overflow: hidden;
@@ -1241,5 +1241,5 @@ line-height: 18px;
 .checkbox input[type="checkbox"]:checked + span::before {background: url(../images/i/Path.png) no-repeat center;}
 .accordion .aside__filter__item .data {
 	padding-top: 14px;
-	display: none;
+	/* display: none; */
 }
