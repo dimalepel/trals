@@ -842,24 +842,22 @@ h1 span {font-family: "RobotoRegular";}
   padding-left: 27px;
 	width: 44%;
 }
-/* .contact-page__content h1 {margin-bottom: 15px;}*/
-.contact-page__content h1 {margin-bottom: 30px;}
+.contact-page__content h1 {margin-bottom: 18px;}
 .contact-page .breadcrums {margin-bottom: 7px;}
-.contact-page .ya-map {height: 402px;}
+.contact-page .ya-map {height: 374px;}
 .contact-page .modal__phone, 
 .contact-page .modal__time {
 	float: none;
 	width: auto;
 }
 .contact-page .modal__time,
-.contact-page .modal__address {margin-bottom: 30px;}
+.contact-page .modal__address {margin-bottom: 18px;}
 .contact-page p {color: #333333;}
 .contact-page .modal__phone .title, 
 .contact-page .modal__time .title,
 .contact-page .modal__address .title {
 	font-size: 16px;
-	/*margin-bottom: 8px;*/
-	margin-bottom: 19px;
+	margin-bottom: 7px;
 	color: #999999;
 }
 /* Карточка товара */
