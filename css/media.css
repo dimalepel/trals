@@ -649,6 +649,9 @@
 	/* Карта */
 	.fb-modal-win .g-modal-win__content {width: 100%;}
 	.fb-modal-win .modal__phone {width: auto;}
+	.fb-modal-win .modal__address, 
+	.fb-modal-win .modal__phone, 
+	.fb-modal-win .modal__time {float: none;}
 	/* Карточка товара */
 	.single-product__top .width-48,
 	.single-product__top .width-52 {
