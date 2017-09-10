@@ -275,8 +275,8 @@ body {
 .brands-slider {
 	margin-top: 36px;
 	margin-bottom: 29px;
-	border-left: 1px solid #E3E3E3;
 }
+.js-brands-slider {border-left: 1px solid #E3E3E3;}
 .brands-slider a {
 	display: block;
 	text-align: center;
@@ -1281,6 +1281,7 @@ html, body, .bd-site { height: 100%; }
 .mobile-trigger,
 .aside-mob-sort,
 .mob-show,
+.tab-show,
 .single-product__top .lost,
 .mobile-filter-active,
 .mobile-aside__nav,

@@ -1,5 +1,5 @@
 // Слайдер брендов
-$('.brands-slider').owlCarousel({
+$('.js-brands-slider').owlCarousel({
   loop:true,
 	navText: ['',''],
 	autoplayHoverPause:true,
