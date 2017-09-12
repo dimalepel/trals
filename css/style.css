@@ -176,6 +176,7 @@ body {
 	display: block;
 	float: left;
 	margin-right: 60px;
+	margin-top: -2px;
 }
 .header__menu {
 	float: left;
@@ -570,6 +571,7 @@ h1 span {font-family: "RobotoRegular";}
 	display: block;
 	margin-bottom: 13px;
 	border: 1px solid #DEDEDE;
+	    border-radius: 3px;
 }
 .main__content p {
 	margin-bottom: 17px;
@@ -749,6 +751,7 @@ h1 span {font-family: "RobotoRegular";}
 .pagination li:last-of-type a:before {content: '\f105';}
 .pagination li:last-of-type {border-right: 1px solid #DFDFDE;}
 /* Результаты поиска */
+
 .search-page .search {margin-bottom: 30px;}
 .search-page.no-result .search  {margin-bottom: 17px;}
 .search-page.no-result p {
@@ -794,15 +797,21 @@ h1 span {font-family: "RobotoRegular";}
 	margin-bottom: 7px;
 }
 .products-item__options li:last-of-type {margin-bottom: 0;}
-.products-item__options li span {
+.products-item__options li span.right {
 	display: block;
 	float: right;
 }
-.products-item__options .price span {
-	color: #D72922;
+.products-item__options li {overflow: hidden;}
+.products-item__options li span.left {
+	display: block;
+	float: left;
+	    max-width: 70%;
+}
+.products-item__options .price span.right {
+	color: rgb(51,51,51);
 	font-family: "RobotoMedium";
 }
-.products-item__options .remainder span {color: #333333;}
+.products-item__options .remainder span.right {color: #333333;}
 .products-item:hover {
 	position: absolute;
 	right: -5px;
@@ -1037,7 +1046,7 @@ h1 span {font-family: "RobotoRegular";}
 .catalog-page .gray-bg {margin-bottom: 46px;}
 .catalog-area .width-25,
 .catalog-area .width-75 {padding: 0;}
-.catalog-list .products-item__options .price span {color:#333333;}
+.catalog-list .products-item__options .price span.right {color:#333333;}
 .catalog-list .item {
 	width: 33.333333%;
 	float: left;
