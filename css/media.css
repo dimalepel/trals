@@ -34,7 +34,7 @@
 		font-size: 13px;
 		line-height: 16px;
 		cursor: pointer;
-		margin-right: 82px;
+		margin-right: 67px;
 	}
 	.mobile-trigger i {
 		display: block;
@@ -55,8 +55,11 @@
 	.header__address,
 	.header__address .address__map {
 		font-size: 10px;
-		line-height: 1.15;
+		line-height: 14px;
 	}
+	.header__address p {
+    margin-bottom: 0; 
+}
 	.header__address .address__map::before {display: none;}
 	.header__center {padding-bottom: 12px;}
 	.header__center .flex {
@@ -129,7 +132,7 @@
     color: #333333;
 	}
 	.products-item__title {
-		height: 32px;
+		height: 36px;
 		position: relative;
 		overflow: hidden;
 	}
@@ -254,6 +257,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.footer__top .container .back_top {
 		right: 16px;
     top: -85px;
+		width: 45px;
+    height: 45px;
 	}
 	.footer__top .width-28 p {line-height: 16px;}
 	.footer__logo img {max-height: 34px;}
@@ -496,8 +501,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.short-desc {
 		border: 0;
 		padding-bottom: 0;
-		margin-bottom: 7px;	
+		
 	}
+	.single-product__top .short-desc {margin-bottom: 9px;	}
+	.single-product .price h3 {
+		    font-size: 15px;
+				margin-bottom: 6px;
+	}
+	
 	.single-product__options {padding-left: 0;}
 	.long-desc h2, 
 	.options-data h2 {
@@ -509,6 +520,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		font-size: 13px;
 		line-height: 14px;
 	}
+	.long-desc p {line-height: 19px;}
 	.options-data__list li {
 		font-size: 13px;
 		line-height: 16px;
