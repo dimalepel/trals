@@ -145,7 +145,7 @@ if(document.documentElement.clientWidth < 1200) {
 }
 
 // Галерея карточки товара
-if(document.documentElement.clientWidth < 768) {
+if(document.documentElement.clientWidth < 320) {
 	$(".photosgallery-vertical").sliderkit({
 		circular:true,
 		mousewheel:true,
