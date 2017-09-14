@@ -21,17 +21,40 @@ $('.js-brands-slider').owlCarousel({
 });
 
 //Кнопка "Наверх"
-$('#back_top').click(function () {
-	$('body,html').animate({
-		scrollTop: 0
-	}, 600);
-	return false;
-});
+if(document.documentElement.clientWidth <= 320) {
+	$("#back_top").hide();
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 700) {
+				$('#back_top').fadeIn();
+			} else {
+				$('#back_top').fadeOut();
+			}
+		});
+			$('#back_top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+	});
+} else {
+	$('#back_top').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 600);
+		return false;
+	});
+}
 
 // Модальные окна
 $(".js-open-modal").fancybox({
 	wrapCSS: 'fb-modal-win',
 	padding : 0,
+	//width: 280,
+	//height: 662,
+	//fitToView: false,
+	//autoSize: false,
 	helpers: {
 		overlay: {
 			locked: false
@@ -142,6 +165,23 @@ function title() {
 }
 if(document.documentElement.clientWidth < 1200) {
 	title();
+}
+
+// Обрезаем текст каталога
+function catalogPrew() {  
+  var elem, size, text;
+  elem = document.getElementsByClassName('catalog-prew');
+  text = elem.innerHTML;
+  size = 250; 
+  for(var i = 0; i < elem.length; i++) { 
+    if(elem[i].innerHTML.length > size) {
+      text = elem[i].innerHTML.substr(0, size);
+    }    
+    elem[i].innerHTML = text + '...';
+  }
+}
+if(document.documentElement.clientWidth <= 320) {
+	catalogPrew();
 }
 
 // Галерея карточки товара
