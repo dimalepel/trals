@@ -709,6 +709,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.search__txt {
 		border: 0;
 		background: #fff;
+		padding-left: 10px;
 	}
 	.search__submit {
 		border: 0;
@@ -723,6 +724,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		position: fixed;
 		top: 50%;
 		z-index: 40;
+		right: 10px;
 	}
 	.footer__top .width-28 p {font-size: 11px;}
 	.footer__top .width-28 {
@@ -735,7 +737,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		margin-left: -15px;
 		padding-right: 15px;
 		padding-left: 15px;
-		padding-bottom: 7px;
+		 padding-bottom: 12px;
+    margin-bottom: 13px;
 	}
 	.footer__menu li {
     margin-right: 0;
@@ -927,12 +930,17 @@ margin-bottom: 7px;}
 	}
 	.tovar-picts .sliderkit-nav-btn {display: none;}
 	.tovar-picts .photosgallery-vertical .sliderkit-nav {
-		bottom: 29px;
+		bottom: 13px;
 		width: 100%;
 	}
+	.articles-list__item {
+    margin-bottom: 30px;
+}
 	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip {
     width: 100% !important;
 		text-align: center;
+		height: 17px !important;
+    top: -13px !important;
 	}
 	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip li {
 		display: inline-block;
@@ -1062,6 +1070,17 @@ margin-bottom: 7px;}
 .contact-page .main__content p {
     line-height: 21px;
     font-size: 13px;
+}
+.g-modal-win__content .modal__phone span,
+.contact-page__content .modal__phone span{
+    display: block;
+}
+.header__contact__data a,
+.contact-page__content .modal__phone span a,
+.modal__phone span a {
+	color: #D72922;
+	border-bottom: 1px solid #D72922;
+	pointer-events: inherit;
 }
 .catalog-list .products-item:hover { height: 384px;}
 	.mob-hidden {display: none !important;} /* скрывает элементы в мобильной версии */

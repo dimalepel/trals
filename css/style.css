@@ -513,6 +513,11 @@ body {
 	top: 11px;
 	right: 14px;
 }
+.modal__phone span a,
+.contact-page__content .modal__phone span a,
+.header__contact__data a {
+	pointer-events: none;
+}
 .ya-map {
 	margin-bottom: 16px;
 	height: 318px;
@@ -531,6 +536,8 @@ body {
 }
 .modal__phone span,
 .modal__time span {font-family: "RobotoMedium";}
+.modal__phone span a,
+.modal__time span a {color: #333333;}
 .modal__phone {width: 370px;}
 .modal__time {float: right;}
 .modal__phone .title,
@@ -865,6 +872,7 @@ h1 span {font-family: "RobotoRegular";}
 }
 .contact-page .modal__time,
 .contact-page .modal__address {margin-bottom: 18px;}
+.contact-page p a,
 .contact-page p {color: #333333;}
 .contact-page .modal__phone .title, 
 .contact-page .modal__time .title,
