@@ -11,7 +11,7 @@ $('.js-brands-slider').owlCarousel({
     0 : {
       items:1
     },
-    768 : {
+    480 : {
        items:3
     },
     1200 : {
@@ -21,7 +21,7 @@ $('.js-brands-slider').owlCarousel({
 });
 
 //Кнопка "Наверх"
-if(document.documentElement.clientWidth <= 320) {
+if(document.documentElement.clientWidth <= 480) {
 	$("#back_top").hide();
 	$(function () {
 		$(window).scroll(function () {
@@ -180,12 +180,12 @@ function catalogPrew() {
     elem[i].innerHTML = text + '...';
   }
 }
-if(document.documentElement.clientWidth <= 320) {
+if(document.documentElement.clientWidth <= 480) {
 	catalogPrew();
 }
 
 // Галерея карточки товара
-if(document.documentElement.clientWidth < 320) {
+if(document.documentElement.clientWidth < 480) {
 	$(".photosgallery-vertical").sliderkit({
 		circular:true,
 		mousewheel:true,
