@@ -780,9 +780,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 .main__content.site-map-page p {
 margin-bottom: 7px;}
-	.breadcrums li {margin-right: 7px;}
-	.breadcrums li:after {margin-left: 5px;}
-	.breadcrums {padding-bottom: 11px;}
+	.breadcrums li {
+		margin-right: 0px;
+    float: none;
+    display: inline;
+	}
+	.breadcrums li:after {
+		display: inline;
+    float: none;
+		margin-left: 5px;
+	}
+	.breadcrums {
+		    white-space: nowrap;
+    text-overflow: ellipsis;
+		padding-bottom: 11px;}
 	.footer__copyright .flex a {font-size: 11px;}
 	.footer__copyright .flex .go-site-map {
 		order: 0;
