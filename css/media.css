@@ -635,7 +635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	/* END style */
 }
 /* Мобила */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 480px) {
 	/* START style */
 	.container {
 		width: 100%;
