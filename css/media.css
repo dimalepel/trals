@@ -1092,7 +1092,14 @@ margin-bottom: 7px;}
 	color: #D72922;
 	border-bottom: 1px solid #D72922;
 	pointer-events: inherit;
+	display: inline-block;
 }
+.contact-page__content .modal__phone span a,
+.modal__phone span a {margin-bottom: 6px;}
+.fb-modal-win .fancybox-skin .g-modal-win__content {
+    padding: 10px;
+}
+.fb-modal-win .modal__time {margin-top: 12px;}
 .catalog-list .products-item:hover { height: 384px;}
 	.mob-hidden {display: none !important;} /* скрывает элементы в мобильной версии */
 	.mob-show {display: block !important;} /* скрывает элементы в мобильной версии */

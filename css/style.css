@@ -1255,8 +1255,8 @@ h1 span {font-family: "RobotoRegular";}
 .radio span::before {
     content: "";
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
     border-radius: 2px;
     border: 1px solid #CCCCCC;
     margin-right: 10px;
@@ -1272,9 +1272,12 @@ h1 span {font-family: "RobotoRegular";}
 	width: 9px;
 	border-radius: 50%;
 	position: absolute;
-	top: 5px;
+	top: 6px;
 	left: -24px;
 	background: #D72922;
+}
+.aside__filter__item {
+   padding-bottom: 13px;
 }
 .accordion .aside__filter__item .data {
 	padding-top: 14px;
