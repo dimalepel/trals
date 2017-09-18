@@ -80,14 +80,14 @@
 		overflow-y: scroll;
 		top: 0;
 		bottom: 0;
-		width: 271px;
+		width: 280px;
 		z-index: 20;
 		background: #fff;
 		 transition: all .25s;
 	}
 	.mobile-aside__nav {
 		display: block;
-		left: -271px;
+		left: -280px;
 	}
 	.bd-site.mob-nav-open .mobile-aside__nav {left: 0; 	}	
 	.mobile-aside__nav__header,
@@ -95,6 +95,7 @@
 		padding: 20px 20px 21px 20px;
 		background: url(../images/i/bg-mob-header.png) no-repeat center;
 		overflow: hidden;
+		background-size: cover;
 	}
 	.mobile-aside__nav__close,
 	.mobile-aside__contact__close {
@@ -669,7 +670,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     padding-top: 9px;
     padding-bottom: 9px;
 	}
-	.mobile-aside__contact {right: -271px;}
+	.mobile-aside__contact {right: -280px;}
 	.mobile-aside__contact__close {float: right;}
 	.mobile-aside__contact__body .header__contact {
 		padding: 20px;
@@ -684,7 +685,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		font-size: 13px;
 		line-height: 19px;
 	}
-	.mobile-aside__contact__body .header__contact li {margin-bottom: 20px;}
+	.mobile-aside__contact__body .header__contact li {margin-bottom: 10px;}
 	.mobile-aside__contact__body .header__contact li:last-of-type {margin-bottom: 0;}
 	.mobile-aside__contact__body .header__address {
 		display: block;
@@ -1093,6 +1094,7 @@ margin-bottom: 7px;}
 	border-bottom: 1px solid #D72922;
 	pointer-events: inherit;
 	display: inline-block;
+	    line-height: 15px;
 }
 .contact-page__content .modal__phone span a,
 .modal__phone span a {margin-bottom: 6px;}
