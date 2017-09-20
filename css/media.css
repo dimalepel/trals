@@ -423,39 +423,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	}
 	.fb-modal-win .ya-map {height: 274px;}
 	/* Слайдер карточки товара */
-	.tovar-picts .photosgallery-vertical .sliderkit-nav {width: 60px;}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip {
-		width: 60px;
-		height: 261px;
+	.tovar-picts__slider-wr {
+		width: 362px;
+    height: 295px;
 	}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip li {margin-bottom: 7px;}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip li a {
-		width: 60px;
-		height: 60px;
-		line-height: 56px;
-	}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip li img {
-		max-height: 40px;
-		max-width: 40px;
-	}
-	.sliderkit-nav-prev, 
-	.sliderkit-nav-next {font-size: 18px;}
-	.tovar-picts .sliderkit-nav-btn {left: 21px;}
-	.sliderkit-nav-prev {top: -3px;}
-	.tovar-picts .photosgallery-vertical .sliderkit-panel {
-    left: 67px;
-    width: 295px;
+	.tovar-picts__slider-wr .slider-for {
+		width: 295px;
     height: 295px;
     line-height: 293px;
 	}
-	.tovar-picts .photosgallery-vertical .sliderkit-panel img {
+	.fancybox-nav {width: 14px;}
+	.fancybox-prev {left: -170px;}
+	.fancybox-next {right: -170px;}
+	.fancybox-nav span {
+		width: 14px;
+		height: 27px;
+		margin-top: -13px;
+		visibility: visible;
+	}
+	.fancybox-prev span,
+	.fancybox-next span {background-position: 0 0;}
+	.fancybox-prev span {
+		left: 0;	
+		background: url(../images/i/small-left-arrow.png) no-repeat center;
+	}
+	.fancybox-next span {
+		right: 0;
+		background: url(../images/i/small-right-arrow.png) no-repeat center;
+	}
+	.tovar-picts__slider-wr .slider-for img {
 		max-height: 230px;
-		max-width: 235px;
+    max-width: 235px;
 	}
-	.tovar-picts .photosgallery-vertical {
-    width: 362px;
-    height: 295px;
+	.slick-dotted.slick-slider {width: 60px;}
+	.tovar-picts__slider-wr .slider-nav .slick-slide {
+		width: 60px !important;
+    height: 60px;
+		line-height: 58px;
+		margin-bottom: 7px;
 	}
+	.tovar-picts__slider-wr .slider-nav .slick-slide img {
+		max-height: 40px;
+    max-width: 40px;
+	}
+	.slick-prev, 
+	.slick-next {left: 22px;}
+	.slick-prev:before, 
+	.slick-next:before {font-size: 18px;}
+	.slick-prev {top: 3px;}
+	.slick-next {bottom: -39px;}
+	/* -- */
 	.single-product__top.row {
 		margin-right: -10px;
 		margin-left: -10px;
@@ -931,36 +948,60 @@ margin-bottom: 7px;}
 	.single-product .price {clear: both;}
 	.price__list li:last-of-type {display: none;}
 	/* Слайдер товара */
-	.tovar-picts .photosgallery-vertical {
+	.tovar-picts__slider-wr {
 		width: 100%;
 		height: 333px;
+		position: relative;
 	}
-	.tovar-picts .photosgallery-vertical .sliderkit-panel {
+	.slick-dotted.slick-slider {
+		width: 100%;
+    position: absolute;
+    bottom: 50px;
+	}
+	.slider-nav .slick-list,
+	.slick-prev, 
+	.slick-next	{display: none !important;}
+	.tovar-picts__slider-wr .slider-for {
+		width: 100%;
+    height: 333px;
+	}
+	.slick-dotted.slick-slider {width: 100%;}
+	.slick-dots li {
+		width: 8px;
+    height: 8px;
+	}
+	.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%;
-		height: 333px;
+    background: #DFDFDE;
+    border-radius: 50%;
+    width: 8px;
+    display: block;
+    height: 8px;
+    content: ' ';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	}
-	.tovar-picts .sliderkit-nav-btn {display: none;}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav {
-		bottom: 13px;
-		width: 100%;
+	.slick-dots li:hover button:before,
+	.slick-dots li.slick-active button:before {
+		opacity: 1;
+		background: #D72922;
 	}
-	.articles-list__item {
-    margin-bottom: 30px;
-}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip {
-    width: 100% !important;
-		text-align: center;
-		height: 17px !important;
-    top: -13px !important;
-	}
-	.tovar-picts .photosgallery-vertical .sliderkit-nav-clip li {
-		display: inline-block;
-		margin-bottom: 0;
-		margin-left: 3px;
-		margin-right: 3px;
-		float: none;
-	}
+	.slick-dots {display: block !important;}
+	.fancybox-next {right: -20px;}
+	.fancybox-prev {left: -20px;}
+	.fancybox-nav {width: 40%;}
+	.fancybox-prev span {background: url(../images/i/small-left-arrow-black.png) no-repeat center;}
+	.fancybox-next span {background: url(../images/i/small-right-arrow-black.png) no-repeat center;}
+	/*  */
+	
 	.single-product .price h3 {
 		font-family: "RobotoMedium";
 		    margin-bottom: 9px;

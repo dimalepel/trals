@@ -1297,6 +1297,102 @@ h1 span {font-family: "RobotoRegular";}
   max-height: 231px; 
 }
 html, body, .bd-site { height: 100%; }
+/* миниатюры новые */
+.tovar-picts__slider-wr {
+	width: 546px;
+	height: 440px;
+}
+.fancybox-nav {width: 22px;}
+.fancybox-prev {left: -250px;}
+.fancybox-next {right: -250px;}
+.fancybox-nav span {
+	width: 22px;
+	height: 42px;
+	margin-top: -23px;
+	visibility: visible;
+}
+.fancybox-prev span,
+.fancybox-next span {background-position: 0 0;}
+.fancybox-prev span {
+	left: 0;	
+	background: url(../images/i/big-left-arrow.png) no-repeat center;
+}
+.fancybox-next span {
+	right: 0;
+	background: url(../images/i/big-right-arrow.png) no-repeat center;
+}
+.tovar-picts__slider-wr .slider-for {
+	width: 440px;
+	height: 440px;
+	line-height: 438px;
+	border: 1px solid #DFDFDE;
+	border-radius: 4px;
+	text-align: center;
+	float: right;
+}
+.slick-dotted.slick-slider {
+	width: 90px;
+	margin-bottom: 0;
+}
+.tovar-picts__slider-wr .js-img-modal {display: block;}
+.tovar-picts__slider-wr .js-img-modal:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	background: url(../images/i/zoom.png) no-repeat center;
+}
+.tovar-picts__slider-wr .slider-nav .slick-slide {
+	line-height: 88px;
+	border: 1px solid #DFDFDE;
+	width: 90px !important;
+	height: 90px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+.tovar-picts__slider-wr .slider-nav .slick-slide:hover,
+.tovar-picts__slider-wr .slider-nav .slick-slide.slick-current {border-color: #D72922;}
+.slick-dots {display: none !important;}
+.tovar-picts__slider-wr .slider-nav .slick-slide img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 50px;
+}
+.tovar-picts__slider-wr .js-img-modal:hover:before {opacity: 1;}
+.tovar-picts__slider-wr .slider-for img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.slider-nav .slick-list {top: 18px !important;}
+.slick-prev,
+.slick-next {
+	width: 17px;
+	height: 17px;
+	padding: 0;
+}
+.slick-prev, .slick-next {
+	left: 36px;
+	z-index: 10;
+}
+.slick-prev {top: 0;}
+.slick-prev:before,
+.slick-next:before {
+	height: 17px;
+  width: 17px;
+	display: block;
+	font-size: 26px;
+  font-family: FontAwesome;
+	color: #333333;
+}
+.slick-prev:before {content: "\f106";}
+.slick-next {bottom: -27px;}
+.slick-next:before {content: "\f107";}
 /* скрываем на десктопе */
 .mobile-trigger,
 .aside-mob-sort,

@@ -20,6 +20,24 @@ $('.js-brands-slider').owlCarousel({
 	}
 });
 
+// Миниатюры товара
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+	vertical: true,
+  centerMode: false,
+  focusOnSelect: true
+});
+
 //Кнопка "Наверх"
 if(document.documentElement.clientWidth <= 480) {
 	$("#back_top").hide();
@@ -182,25 +200,4 @@ function catalogPrew() {
 }
 if(document.documentElement.clientWidth <= 480) {
 	catalogPrew();
-}
-
-// Галерея карточки товара
-if(document.documentElement.clientWidth < 480) {
-	$(".photosgallery-vertical").sliderkit({
-		circular:true,
-		mousewheel:true,
-		shownavitems:99,
-		verticalnav:true,
-		navclipcenter:true,
-		auto:false
-	});
-} else {
-	$(".photosgallery-vertical").sliderkit({
-		circular:true,
-		mousewheel:true,
-		shownavitems:4,
-		verticalnav:true,
-		navclipcenter:true,
-		auto:false
-	});
 }
