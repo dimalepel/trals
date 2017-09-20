@@ -1,4 +1,5 @@
-// Слайдер брендов
+$(document).ready(function() {
+	// Слайдер брендов
 $('.js-brands-slider').owlCarousel({
   loop:true,
 	navText: ['',''],
@@ -201,3 +202,5 @@ function catalogPrew() {
 if(document.documentElement.clientWidth <= 480) {
 	catalogPrew();
 }
+
+});
