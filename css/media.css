@@ -432,7 +432,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     height: 295px;
     line-height: 293px;
 	}
-	.fancybox-nav {width: 14px;}
+	.fancybox-nav {width: 40%;}
 	.fancybox-prev {left: -170px;}
 	.fancybox-next {right: -170px;}
 	.fancybox-nav span {
@@ -444,11 +444,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.fancybox-prev span,
 	.fancybox-next span {background-position: 0 0;}
 	.fancybox-prev span {
-		left: 0;	
+		left: 15px;	
 		background: url(../images/i/small-left-arrow.png) no-repeat center;
 	}
 	.fancybox-next span {
-		right: 0;
+		right: 15px;
 		background: url(../images/i/small-right-arrow.png) no-repeat center;
 	}
 	.tovar-picts__slider-wr .slider-for img {

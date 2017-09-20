@@ -1302,7 +1302,7 @@ html, body, .bd-site { height: 100%; }
 	width: 546px;
 	height: 440px;
 }
-.fancybox-nav {width: 22px;}
+.fancybox-nav {width: 40%;}
 .fancybox-prev {left: -250px;}
 .fancybox-next {right: -250px;}
 .fancybox-nav span {
@@ -1314,11 +1314,11 @@ html, body, .bd-site { height: 100%; }
 .fancybox-prev span,
 .fancybox-next span {background-position: 0 0;}
 .fancybox-prev span {
-	left: 0;	
+	left: 15px;	
 	background: url(../images/i/big-left-arrow.png) no-repeat center;
 }
 .fancybox-next span {
-	right: 0;
+	right: 15px;
 	background: url(../images/i/big-right-arrow.png) no-repeat center;
 }
 .tovar-picts__slider-wr .slider-for {
