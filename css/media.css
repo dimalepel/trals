@@ -235,7 +235,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     max-width: 120px;
     max-height: 165px;
 }
-.site-map-page__inner h1 {margin-bottom: 9px;}
+
 	/* Категории */
 	.category-title {
 		font-size: 19px;
@@ -336,7 +336,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		margin-top: 8px;
 	}
 	.main__content.width-80 {width: 100%;}
-	.catalog-page .gray-bg {margin-bottom: 27px;}
+	
 	/* Фильтр */
 	.aside__filter__item.btn-wr {padding: 17px 15px;}
 	.btn.gray {
@@ -480,11 +480,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.contact-page .ya-map {
     height: 366px;
 }
-.about__inner h1 {margin-bottom: 8px;}
-.contact-page .container h1 {
-	margin-bottom: 14px;
-    margin-top: -7px;
-}
+
 .contact-page .modal__address.tab-show {
 	    margin-bottom: 8px;
 }
@@ -612,20 +608,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     padding-left: 10px;
     padding-right: 10px;
 	}
-	.detail_inner h1 {
-	margin-bottom: 15px;}
-	.detail_inner img {
-    margin-bottom: 18px !important;
-}
-	.articles__iner h1 {margin-bottom: 16px;}
+	
+	
 	.articles-list__item .btn {
     padding-right: 25px;
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 25px;
-}
-.no-result__inner .search {
-    margin-bottom: 9px !important;
 }
 .articles-list__item .row {
     margin-left: -10px;
@@ -783,9 +772,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		order: 1;
 		font-size: 11px;
 	}
-	.site-map-page__inner h1 {
-    margin-bottom: 8px;
-}
+	
 .site-map-page ul li {
     margin-bottom: 11px;
 }
@@ -1010,7 +997,6 @@ margin-bottom: 7px;}
 	.single-product__top {
     margin-bottom: 10px;
 }
-.main.single-product__inner {margin-bottom: 17px;}
 .options-data h2,
 .long-desc h2 {
 	font-size: 16px;
@@ -1071,17 +1057,12 @@ margin-bottom: 7px;}
 	.page-404__body .desc p {font-size: 12px;}
 	/* --- */
 	.single-product__inner h1.mob-show {margin-bottom: 10px;}
-	.catalog-page .breadcrums {margin-bottom: 8px;}
-	.catalog-page h1 {
-    margin-bottom: 2px;
-}
+
+	
 .catalog-page .main__content {
     margin-bottom: 15px;
 }
-.catalog-page .gray-bg {
-    padding: 15px 0;
-    margin-bottom: 13px;
-}
+
 .products-item__pic {
     height: 200px;
     line-height: 1;
@@ -1103,9 +1084,7 @@ margin-bottom: 7px;}
 .catalog-list .products-item {
     height: 373px;
 }
-.contact-page .container h1 {
-    margin-bottom: 10px;
-}
+
 .contact-page .modal__address.tab-show .title,
 .contact-page .modal__address.tab-show {
     font-size: 13px;

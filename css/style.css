@@ -849,7 +849,6 @@ h1 span {font-family: "RobotoRegular";}
 	vertical-align: middle;
 }
 /* Страница Контакты */
-.main.contact-page {margin-bottom: 36px;}
 .contact-page .contact-page__content,
 .contact-page .ya-map-wr {
 	padding-left: 15px;
@@ -863,7 +862,7 @@ h1 span {font-family: "RobotoRegular";}
 	width: 44%;
 }
 .contact-page__content h1 {margin-bottom: 18px;}
-.contact-page .breadcrums {margin-bottom: 7px;}
+
 .contact-page .ya-map {height: 374px;}
 .contact-page .modal__phone, 
 .contact-page .modal__time {
@@ -1048,10 +1047,10 @@ h1 span {font-family: "RobotoRegular";}
 	min-width: 95px;
 }
 /* Каталог */
-.catalog-page h1 {margin-bottom: 8px;}
+
 .catalog-page .main__content {margin-bottom: 31px;}
 .catalog-page .main__content p {margin-bottom: 9px;}
-.catalog-page .gray-bg {margin-bottom: 46px;}
+
 .catalog-area .width-25,
 .catalog-area .width-75 {padding: 0;}
 .catalog-list .products-item__options .price span.right {color:#333333;}
@@ -1398,6 +1397,7 @@ html, body, .bd-site { height: 100%; }
 .aside-mob-sort,
 .mob-show,
 .tab-show,
+.desktop-hidden,
 .single-product__top .lost,
 .mobile-filter-active,
 .mobile-aside__nav,
