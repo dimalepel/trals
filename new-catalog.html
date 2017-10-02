@@ -287,13 +287,26 @@
 							<div class="aside__filter__item">
 								<div class="aside__filter__item__title accordion-item">Цена, б.р.</div>
 								<div class="aside__filter__item__var data">
-									<div class="slider-input">
-										<div class="slider-input__left"><span>от</span> <input type="text" class="min" value="0.75"/> </div>
-										<div class="slider-input__right"><span>до</span> <input type="text" class="max" value="4"/></div>
+									<!-- START::NEW_UI_SLIDER-->
+									<div class="filter__attrs cr-filter__price">
+										<dl class="b-filter-attr j-slider_range" from="20" to="1500">										
+											<dd class="filter-attr__value slider-input">
+												<div  class="filter__textlabel slider-input__left">
+													<span class = "dscr">от </span>
+													<span class="g-form__inputwrap">
+														<input class="g-form__text" name="filter[price][from]" value="85" maxlength="11" placeholder="20" type="text">
+													</span>
+												</div>
+												<div class="filter__textlabel slider-input__right">
+													<span class = "dscr">до</span>
+													<span class="g-form__inputwrap">
+														<input class="g-form__text" name="filter[price][to]" maxlength="11" placeholder="1 500" type="text">
+													</span>
+												</div>
+											</dd>							
+										</dl>
 									</div>
-									<div class = "ui-slider-container">
-										<div class="factory"></div>
-									</div>
+									<!-- END::NEW_UI_SLIDER-->	
 									<div class="checkbox">
 										<label>
 											<input id="" class="" name="" value="" type="checkbox">

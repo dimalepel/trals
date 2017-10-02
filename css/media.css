@@ -407,7 +407,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-size: 13px;
     line-height: 24px;'
 	}
-	.slider-input span {display: none;}
+	.slider-input .dscr {display: none;}
 	.slider-input > div {width: 65px;}
 	.slider-input > div input {width: 100%;}
 	.aside__filter__item__title::before {left: -14px;}

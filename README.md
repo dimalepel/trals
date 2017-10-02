@@ -11,6 +11,8 @@
 
 Каталог https://dimalepel.github.io/trals/catalog.html д п м
 
+UPD. Новый UI-slider https://dimalepel.github.io/trals/new-catalog.html д п м
+
 Контакты https://dimalepel.github.io/trals/contacts.html д п м
 
 О компании https://dimalepel.github.io/trals/about.html д п м
