@@ -1058,6 +1058,12 @@ margin-bottom: 7px;}
 	/* --- */
 	.single-product__inner h1.mob-show {margin-bottom: 10px;}
 .slider-input .dscr {display: inline-block;}
+.slider-input > div input {
+    width: 70%;
+}
+.slider-input > div {
+    min-width: 80px;
+}
 	
 .catalog-page .main__content {
     margin-bottom: 15px;
