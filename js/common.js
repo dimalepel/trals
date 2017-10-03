@@ -1,25 +1,14 @@
 $(document).ready(function() {
 	// Слайдер брендов
-$('.js-brands-slider').owlCarousel({
-  loop:true,
-	navText: ['',''],
-	autoplayHoverPause:true,
-	autoplayTimeout: 5000, // Время смены слайдов
-	smartSpeed:1750, // плавность смены слайда
-  margin:0,
-  nav:true,
-	responsive : {
-    0 : {
-      items:1
-    },
-    480 : {
-       items:3
-    },
-    1200 : {
-      items:4
-    }
-	}
-});
+  $('.js-brands-slider').owlCarousel({ 
+		stopOnHover : true,
+		navigationText: ['',''],
+		slideSpeed: 1000,
+		navigation : true,
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsMobile : [479,1]
+  });
 
 // Миниатюры товара
 $('.slider-for').slick({

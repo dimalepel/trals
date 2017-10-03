@@ -272,6 +272,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		width: auto;
 		margin-right: 0;
 	}
+	.owl-carousel .owl-wrapper-outer {border-right: 1px solid #E3E3E3;}
 	.footer__contact.flex {
 		display: flex;
 		flex-direction: row;
@@ -1122,6 +1123,7 @@ margin-bottom: 7px;}
 	display: inline-block;
 	    line-height: 15px;
 }
+
 .contact-page__content .modal__phone span a,
 .modal__phone span a {margin-bottom: 6px;}
 .fb-modal-win .fancybox-skin .g-modal-win__content {
